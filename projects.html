@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>درآمدی بر سیاست علم و فناوری</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+<link href="https://cdn.jsdelivr.net/gh/rastikerdar/sahel-font@v[X.Y.Z]/dist/font-face.css" rel="stylesheet" type="text/css" />
+
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+</head>
+
+<body>
+    
+  <div class="svg-container">
+    <!-- I crated SVG with: https://codepen.io/anthonydugois/pen/mewdyZ -->
+    <svg viewbox="0 0 800 400" class="svg">
+      <path id="curve" fill="#006699" d="M 800 300 Q 400 350 0 300 L 0 0 L 800 0 L 800 300 Z">
+      </path>
+    </svg>
+  </div>
+
+  <header >
+    <h1 class="myfont">درآمدی بر سیاست علم و فناوری</h1><br>
+    <h3 class="myfont">درس سیاست علم و فناوری در گروه سیاستگذاری دانشکده مدیریت و اقتصاد دانشگاه صنعتی شریف ارائه می شود<br> این درس به ابعاد مختلف ادبیات سیاست علم، فناوری و نوآوری و همچنین دلالت های آن برای ایران می پردازد</h3>
+  </header>
+
+    <div id="wrap">
+        <nav class="slidemenu">
+  
+
+    
+            <input type="radio" name="slideItem" id="slide-item-1" class="slide-toggle"/>
+            <label for="slide-item-1" onclick="navigateToPage1()"><p class="icon">★</p><span class="myfont">معرفی استاد</span></label>
+        
+            <input type="radio" name="slideItem" id="slide-item-2" class="slide-toggle"/>
+            <label for="slide-item-2" onclick="navigateToPage2()"><p class="icon">★</p><span class="myfont">پروژه های دانشجویان</span></label>
+          
+             <input type="radio" name="slideItem" id="slide-item-3" class="slide-toggle"/>
+             <label for="slide-item-3" onclick="navigateToPage3()"><p class="icon">★</p><span class="myfont">محتوای درس</span></label>
+        
+            <input type="radio" name="slideItem" id="slide-item-4" class="slide-toggle" checked/>
+            <label for="slide-item-4" onclick="navigateToPage4()"><p class="icon">★</p><span class="myfont">صفحه اصلی</span></label>
+        
+        
+             <div class="clear"></div>
+            
+            <!-- Bar -->
+             <!-- <div class="slider"> 
+              <div class="bar"></div> 
+            </div>  -->
+            
+          </nav>
+          
+          <script>
+            function navigateToPage1() {
+                window.location.href = "https://spri.sharif.ir/scholars/%D8%B9%D9%84%DB%8C-%D9%85%D9%84%DA%A9%DB%8C";
+            }
+            function navigateToPage2() {
+                window.location.href = "projects.html";
+            }
+            function navigateToPage3() {
+                window.location.href = "#";
+            }
+            function navigateToPage4() {
+                window.location.href = "index.html";
+            }
+            </script>
+           
+        <!-- <div id="topmenu" >
+          <div class="rights">    </div>
+          <div class="lefts">
+            <ul>
+              <li><a href="index.html">صفحه اصلی</a></li>
+              <li class="rtl-li"><a href="https://spri.sharif.ir/scholars/%D8%B9%D9%84%DB%8C-%D9%85%D9%84%DA%A9%DB%8C" >معرفی استاد درس</a></li>
+              <li><a href="projects.html">پروژه های دانشجویان</a></li>
+            </ul>
+          </div>
+        </div> -->
+
+  <div id="main">    
+    <div id="leftside">
+       <a href=".\sources\guide.pdf" class="myfont"> <h2 class="myfont">دانلود راهنمای انجام پروژه</h2></a>
+
+        <h2 class="myfont">پروژه های انجام شده</h2>
+
+        
+        <button class="accordion">ترم بهار ۱۴۰۱-۱۴۰۲</button>
+        <div class="panel">
+            <ul class="myfont rl">
+            <li><a href=".\sources\spring1401-2\fintech.pdf" target="_blank">چالشهای توسعه فینتک در کشور</a>
+            </li>
+            <li><a href=".\sources\spring1401-2\internet.pdf" target="_blank">چالشهای توسعه اینترنت در کشور</a>
+            </li>
+            <li><a href=".\sources\spring1401-2\openbanking.pdf" target="_blank">چالشهای توسعه بانکداری باز در کشور</a>
+            </li>
+            </ul>
+        </div>
+
+        <!-- add other terms like above here -->
+
+
+        <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+        
+
+        
+<script>
+    (function() {
+    // Variables
+    var $curve = document.getElementById("curve");
+    var last_known_scroll_position = 0;
+    var defaultCurveValue = 350;
+    var curveRate = 3;
+    var ticking = false;
+    var curveValue;
+  
+    // Handle the functionality
+    function scrollEvent(scrollPos) {
+      if (scrollPos >= 0 && scrollPos < defaultCurveValue) {
+        curveValue = defaultCurveValue - parseFloat(scrollPos / curveRate);
+        $curve.setAttribute(
+          "d",
+          "M 800 300 Q 400 " + curveValue + " 0 300 L 0 0 L 800 0 L 800 300 Z"
+        );
+      }
+    }
+  
+    // Scroll Listener
+    // https://developer.mozilla.org/en-US/docs/Web/Events/scroll
+    window.addEventListener("scroll", function(e) {
+      last_known_scroll_position = window.scrollY;
+  
+      if (!ticking) {
+        window.requestAnimationFrame(function() {
+          scrollEvent(last_known_scroll_position);
+          ticking = false;
+        });
+      }
+  
+      ticking = true;
+    });
+  })();
+  
+  </script>
+ 
+    </div>
+</div>
+</body>
+</html>

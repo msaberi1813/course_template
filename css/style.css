@@ -1,0 +1,465 @@
+/* 
+Stylesheet for the free sNews15_1 template
+from http://www.free-css-templates.com
+*/
+
+/* Reset all margins and paddings for browsers */
+* { 
+	padding: 0;
+	margin: 0;
+}
+
+body { 
+	font: .8em Verdana, Arial, Sans-Serif; 
+	line-height: 2em; 
+	margin: 0;
+	font-family: 'Sahel', sans-serif;
+}
+
+
+@import 'https://fonts.googleapis.com/css?family=Ubuntu:300, 400, 500, 700';
+
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+}
+
+.svg-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+svg {
+  path {
+    transition: .1s;
+  }
+
+  &:hover path {
+    d: path("M 500 300 Q 400 250 0 300 L 0 0 L 500 0 L 500 300 Z");
+  }
+}
+
+/* body {
+	background: #8d3535;
+	color: #333;
+	font-family: 'Ubuntu', sans-serif;
+	position: relative;
+  } */
+
+h3 {
+  font-weight: 200;
+}
+
+header {
+  color: #fff;
+  padding-top: 8vw;
+  padding-bottom: 30vw;
+  text-align: center;
+}
+
+
+
+
+small {
+  opacity: .5;
+  font-weight: 300;
+
+  a {
+    color: inherit;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+  }
+  
+  .clear{
+	clear: both;
+  }
+  
+  
+  .slide-toggle{
+	display: none;
+  }
+  
+  .slidemenu{
+	font-family: arial, sans-serif;
+	max-width: 600px;
+	margin: 50px auto;
+	overflow: hidden;
+  }
+  
+  .slidemenu label{
+	width: 25%;
+	text-align: center;
+	display: block;
+	float: left;
+	color: #333;
+	/* opacity: 0.2; */
+  
+  }
+  
+  .slidemenu label:hover{
+	cursor: pointer;
+	color: #666;
+  }
+  
+  .slidemenu label span{
+	display: block;
+	padding: 10px;    
+  }
+  
+  .slidemenu label .icon{
+	font-size: 20px;
+	border: solid 2px #333;
+	text-align: center;
+	height: 50px;
+	width: 50px;
+	display: block;
+	margin: 0 auto;
+	line-height: 50px;
+	border-radius: 50%;
+  }
+  
+  /*Bar Style*/
+  
+  .slider{
+	width: 100%;
+	height: 5px;
+	display: block;
+	background: #ccc;
+	margin-top: 10px;
+	border-radius: 5px;
+  }
+  
+  .slider .bar{
+	width: 25%;
+	height: 5px;
+	background: #333;
+	border-radius: 5px;
+  }
+  
+  /*Animations*/
+  .slidemenu label, .slider .bar {
+	transition: all 500ms ease-in-out;
+	-webkit-transition: all 500ms ease-in-out;
+	-moz-transition: all 500ms ease-in-out;
+  }
+  
+  /*Toggle*/
+  
+  .slidemenu .slide-toggle:checked + label{
+	opacity: 1;
+  }
+  
+  
+  
+  .slidemenu #slide-item-1:checked ~ .slider .bar{ margin-left: 0; }
+  .slidemenu #slide-item-2:checked ~ .slider .bar{ margin-left: 25%; }
+  .slidemenu #slide-item-3:checked ~ .slider .bar{ margin-left: 50%; }
+  .slidemenu #slide-item-4:checked ~ .slider .bar{ margin-left: 75%; }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rl {
+	text-align: right;
+}
+
+.myfont{
+	font-family: 'Sahel', sans-serif;
+}
+
+
+
+#wrap {	margin: 0 auto;	width: 80%; font-family: 'Sahel', sans-serif;}
+
+/* TOP HEADER -------- */
+#top {
+	margin: 30 auto;
+	padding: 30;
+	color: #666;
+	background: #FFF url(../images/top.jpg) repeat-x top;
+	height: 81px;
+}
+#top h1 { padding: 10px 0 0 25px; color: #FFF; font-size: 160%; background: transparent; text-align: center;}
+#top h2 { padding: 0px 0 0 25px; color: #aaa; font-size: 80%; background: transparent; margin-bottom: 0px;text-align: center;}
+#top .padding { padding-top: 10px; }
+#top .lefts { 
+	background: transparent url(../images/topl.jpg) no-repeat left; 
+	height: 81px; 
+}
+#top .rights {
+	background: transparent url(../images/topr.jpg) no-repeat right;
+	float: right;
+	height: 81px;
+	width: 20px;
+}
+
+/* SEARCH BOX AND BUTTON ----------*/
+#search { float: right;  padding: 10px 25px 0 0;  }
+
+#search input.text { 
+	border: 1px solid #eee;
+	display: inline;
+	margin-top: 5px;
+	width: 120px;
+	height: 12px;
+	font-size: 10px;
+ }
+ #search input.searchbutton {
+	border: 0;
+	background: transparent;
+	color: #FFF;
+	cursor: pointer;
+	font: bold 0.8em Arial, Arial, Sans-Serif
+ }
+
+#subheader { 
+	clear: both; 
+	border-top: 1px dotted #888;	
+	border-bottom: 1px dotted #888;
+	background: #eaeaea;
+	color: #808080;
+	padding: 2em;
+	margin: 15px 8px 10px 8px;
+	
+}
+#subheader a { text-decoration: none; border-bottom: 1px dashed #0066B3; } 
+ 
+ 
+/* TOP MENU ---------- */
+#topmenu {  	margin: 0px 8px 0 8px; 
+			padding: 0;
+			background: url(../images/menu.jpg) repeat-x top;
+			height: 35px;
+			direction: rtl;
+			
+}
+#topmenu .lefts { 
+	background: url(../images/menul.jpg) no-repeat left; 
+	height: 35px; 
+	padding-left: 5px;
+}
+#topmenu .rights {
+	background: url(../images/menur.jpg) no-repeat right;
+	float: right;
+	height: 35px;
+	width: 8px;
+}
+#topmenu li a { 
+	color: #FFF;
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 15px;
+	text-decoration: none;
+	background: transparent;
+	font-weight: bold
+} 
+#topmenu li { padding: 0px;
+	float: right;
+	margin: 0;
+	font-size: 11px;
+	padding-left: 10px;
+	line-height: 35px;
+	white-space: nowrap;
+	list-style-type: none;
+	width: auto;
+	background: url(../images/sep.gif) no-repeat top left
+	
+}
+
+#main { background: #FFF; margin: 25px 0 15px 0; color: #666; }
+
+#main #rightside {
+	width: 220px;
+	float: right;
+	background: #FFF;
+	margin-right: 8px;
+	color: #666;
+	
+} 
+
+#main #rightside .box {
+	background: #efefef;
+	margin-bottom: 10px;
+	padding: 5px;
+	color: #666;
+}
+
+#main #rightside h2 {
+	font: bold 1.0em Arial, Arial, Sans-Serif; 
+    background: #CDCDCD url(../images/greyc.gif) no-repeat top right;
+	height: 18px;
+	padding: 2px;
+	color: #777;
+}
+
+
+/* LEFT SIDE - ARTICLES AREA -------- */
+#leftside {
+	padding-right: 8px;
+	color: #888;
+	background: #FFF;
+	margin-right: 8px;
+	margin-left: 8px;
+	
+}
+#leftside button{
+	font-family: 'Sahel', sans-serif;
+	float: right;
+	text-align: right;
+}
+#leftside h2 { padding: 20px; text-align: right; color: #555; text-indent: 10px; background: #FFF url(../images/head.gif) no-repeat right; }
+#leftside h3 {padding: 30px; text-align: right; color: #555; text-indent: 0px;   }
+#leftside ul {padding: 30px; }
+ul.a{
+	list-style-type: circle;
+}
+
+.spec {
+	background: #FFF url(../images/head.gif) no-repeat right;
+}
+#leftside div.cust {float: right; }
+
+#footer {
+	clear: both;
+	background: #FFF url(../images/footer.jpg) repeat-x;
+	height: 46px;
+	margin-left: 8px;
+	margin-right: 8px;
+	font-size: 75%;
+	color: #666;
+}
+#footer p  { padding: 5px }
+#footer .rside { float: right; display: inline; padding: 5px; text-align: right}
+
+ 
+a { color: #0066B3; background: inherit; text-decoration: none }
+h1 { font: bold 1.9em Arial, Arial, Sans-Serif }
+h2 { font: bold 1.2em Arial, Arial, Sans-Serif; padding: 0; margin: 0 }
+ul {  padding: 0; margin: 0}
+li { list-style-type: none }
+.date { border-top: 1px solid #e5e5e5; text-align: right; margin-bottom: 25px; margin-top: 5px;}
+#main #leftside .date a, #main #rightside a { border: 0; text-decoration: none; }
+ 
+.comment .date { text-align: left; border: 0;}	
+
+
+#breadcrumbs { 
+	float: left;
+	padding-left: 8px;
+	padding-top: 0px;
+	font: bold .8em Arial, Arial, Sans-Serif; 
+	color: #666;
+	width: 100%;
+	height: 25px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	clear: both;
+}
+
+
+
+#leftside #txt {width: 85%; height: 10em; padding: 3px 3px 3px 6px; margin-left:0em;}
+#leftside textarea { border: 1px solid #bbb; width: 85%;  }
+
+
+/* SNEWS */
+#main #leftside fieldset { float: left; width: 95%; border: 1px solid #ccc; padding: 10px 8px; margin: 0 10px 8px 0; background: #FFF; color: #000; }
+#main #leftside fieldset p { width: 95%; }
+#main input { padding: 3px; margin: 0; border: 1px solid #bbb }
+p { margin-top: 5px; }
+/*input.search { border: 1px solid #ccc; padding: 4px; width: 160px; }*/
+.comment { background: #FFF; color: #808080; padding: 10px; margin: 0 0 10px 0; border-top: 1px solid #ccc; }
+.commentsbox { background: #FFF; color: #808080; padding: 10px; margin: 0 0 10px 0; border-top: 1px solid #ccc; }
+
+
+.resource {
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin: 10px 0;
+	background-color: #f9f9f9;
+}
+
+.year {
+	font-weight: bold;
+	color: #555;
+}
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+	background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+	padding: 0 18px;
+	background-color: white;
+	display: none;
+	overflow: hidden;
+  }
+
+
+
+
+
+
